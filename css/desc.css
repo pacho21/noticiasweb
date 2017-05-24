@@ -99,7 +99,7 @@
 
   .affix {
         top: 0;
-        width:calc(100% - 300px - 2%);
+        width:calc(100% - 300px - 4%);
         margin:0% !important;
         
         background-color:rgba(144,195,212,1)!important;
@@ -138,11 +138,11 @@
         padding-top: 70px;
     }
 
-  .divPublicidad{
+#divPublicidad{
     width: 300px;
     position: absolute;
     right: 0px;
-    margin-right: 1% !important;
+    margin-right: 2% !important;
     height: 100%;
         }
 
@@ -165,7 +165,7 @@
 }
 
 #aire{
-  width:calc(100% - 300px - 2%);
+  width:calc(100% - 300px - 4%);
   border: 1px green solid;
   margin: 2%;
 }
@@ -183,4 +183,8 @@ hr{
   margin-left: calc((100% - 300px)/2);
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+#imgPublicidad{
+  width: 100%;
 }
