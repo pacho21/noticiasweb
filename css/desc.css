@@ -1,0 +1,186 @@
+/*CSS PARA DESKTOP (aire)*/
+  body{
+    height: 100%;
+  }
+
+  #divHead{
+    margin-left: 2%!important;
+    margin-right:2%!important;
+    background-image: url(../img/bhead.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+  }
+  #myCarousel{
+    background-color:rgba(144,195,212,0.2);
+    border: 1px solid black;
+    margin-left:2%;
+    margin-right: 2%;
+    color:aliceblue;
+  }
+
+  .divNoticias{
+    margin: 1%;
+  }
+  #newsImg{
+    max-height: 200px;
+    max-width: 200px;
+  }
+
+
+ 
+  .mid{
+    color: black;
+    text-align: center;
+  }
+
+  /*
+    Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
+    CSS from:       http://codepen.io/transportedman/pen/NPWRGq
+    and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
+    Inspired from:  http://codepen.io/Rowno/pen/Afykb 
+  */
+  .carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+  }
+
+  .carousel-fade .carousel-inner .active {
+    opacity: 1;
+  }
+
+  .carousel-fade .carousel-inner .active.left,
+  .carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  .carousel-fade .carousel-inner .next.left,
+  .carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+  }
+
+  .carousel-fade .carousel-control {
+    z-index: 2;
+  }
+
+  /*
+    WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+    Need to override the 3.3 new styles for modern browsers & apply opacity
+  */
+  @media all and (transform-3d), (-webkit-transform-3d) {
+      .carousel-fade .carousel-inner > .item.next,
+      .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+      }
+      .carousel-fade .carousel-inner > .item.prev,
+      .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+      }
+      .carousel-fade .carousel-inner > .item.next.left,
+      .carousel-fade .carousel-inner > .item.prev.right,
+      .carousel-fade .carousel-inner > .item.active {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+      }
+  }
+
+  .item {
+      display: none;
+      position: relative;
+      .transition(5s ease-in-out left);
+  }
+
+  .affix {
+        top: 0;
+        width:calc(100% - 300px - 2%);
+        margin:0% !important;
+        
+        background-color:rgba(144,195,212,1)!important;
+        z-index: 9999!important;
+       animation: affixFadeIn 3s  ease-in;
+        -webkit-animation: affixFadeIn 3s;
+        height: 50px;
+  }
+  .affix .item h3{
+    margin-top:10px;
+
+    display:inline-block!important;
+  }
+
+  .affix .item p{
+    margin-top: 0px !important;
+    
+    display:inline-block!important
+  }
+
+
+  @keyframes affixFadeIn
+  {
+  from {opacity: 0;}
+  to {opacity: 1;}
+  }
+
+  @-webkit-keyframes affixFadeIn 
+  {
+  from {opacity: 0;}
+  to {opacity: 1;}
+  }
+
+
+    .affix + .container-fluid {
+        padding-top: 70px;
+    }
+
+  .divPublicidad{
+    width: 300px;
+    position: absolute;
+    right: 0px;
+    margin-right: 1% !important;
+    height: 100%;
+        }
+
+#nImg{
+  display: inline-block;
+  margin-top:2%;
+  margin-left: 2%;
+  float:left;
+  width: 300px;
+  padding-right:10px;
+}
+#news{
+  width:calc(100% - 150px);
+  float:none;
+}
+#imgNoticia{
+  margin-left: 2%;
+  margin-top:1%;
+  width: 100%;
+}
+
+#aire{
+  width:calc(100% - 300px - 2%);
+  border: 1px green solid;
+  margin: 2%;
+}
+
+hr{
+  width: 80%;
+}
+
+#noMas{
+  display: none;
+  background-color:rgba(144,195,212,1);
+  border: 1px solid black;
+  color:white;
+  position: absolute;
+  margin-left: calc((100% - 300px)/2);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

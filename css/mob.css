@@ -1,0 +1,15 @@
+/*CSS PARA movil sin aire*/
+#divPublicidadMovil{
+  position: fixed;
+  bottom: 0px;
+  background-color: green;
+  height: 90px;
+  width: 100%; /*Podria intentar que sea adaptive*/
+
+}
+#divPublicidadWeb{
+  display: none;
+}
+#divAire{
+  margin:0%;
+}
