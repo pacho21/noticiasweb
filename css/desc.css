@@ -94,12 +94,12 @@
   .item {
       display: none;
       position: relative;
-      .transition(5s ease-in-out left);
+      .transition(6s ease-in-out left);
   }
 
   .affix {
         top: 0;
-        width:calc(100% - 300px - 4%);
+        width:calc(100% - 300px - 8%);
         margin:0% !important;
         
         background-color:rgba(144,195,212,1)!important;
@@ -160,22 +160,28 @@
 }
 #imgNoticia{
   margin-left: 2%;
-  margin-top:1%;
   width: 100%;
 }
 
 #aire{
-  width:calc(100% - 300px - 4%);
+  width:calc(100% - 300px - 8%);
   border: 1px green solid;
   margin: 2%;
 }
 
 hr{
-  width: 80%;
+  width: 90%;
 }
 
 #noMas{
-  display: none;
+  display: none;  
+  position: absolute;
+  margin-left: calc((100% - 300px)/2);
+  margin-bottom: 5%;
+  z-index: 999 !important;
+}
+
+#cargar{
   background-color:rgba(144,195,212,1);
   border: 1px solid black;
   color:white;
@@ -184,7 +190,6 @@ hr{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 #imgPublicidad{
   width: 100%;
 }
