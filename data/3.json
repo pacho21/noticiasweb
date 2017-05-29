@@ -1,0 +1,18 @@
+[
+    {   
+        "type":"Salud: ",
+        "title": "Bezoya, el agua de Borja Moll",
+        "date": "08-09-2017",
+        "img": "img/news8.jpg",
+        "alt": "Bezoya",
+        "desc": "El agua oficial del instituto es Bezoya. Las mujeres de la cafeteria confirman que es un agua que contiene todo lo necesario para que los alumnos crezcan sanos."
+    },
+    {
+        "type":"Informática: ",
+        "title": "Apple mejora su TV",
+        "date": " 10-06-2017",
+        "img": "img/news9.jpg",
+        "alt": "apple-tv",
+        "desc": "La empresa californiana invierte en mejorar su producto a base de optimización de codigo. Esto ha sido posible gracias a gente jóven y mejoras de codigo."
+    }
+]
