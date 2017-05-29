@@ -1,4 +1,4 @@
-var ficherosJSON = ["1.json","2.json","3.json"];
+var ficherosJSON = ["1.json","2.json"];
 var cargado=0;
 var miniCarga=0;
 var c=true;
@@ -26,7 +26,7 @@ $(document).ready(function() {
 function cargarNoticias(){
 	if((cargado<ficherosJSON.length)){
 		$.getJSON("https://rawgit.com/pacho21/noticiasweb/master/data/"+ficherosJSON[cargado], function(jsOb){
-			for(x=0;x<2;x++){				
+			for(x=0;x<3;x++){				
 				var tit = document.createElement("h3");
 				var divI = document.createElement("div");
 				var img = document.createElement("img");
@@ -85,7 +85,7 @@ function cargarNoticias(){
 function cargaMini(){
 	while(miniCarga<ficherosJSON.length){
 		$.getJSON("https://rawgit.com/pacho21/noticiasweb/master/data/"+ficherosJSON[miniCarga], function(jsObject){
-			for(x=0;x<2;x++){				
+			for(x=0;x<3;x++){				
 				var type=document.createElement("h3");
 				var minidesc=document.createElement("p");
 				var divItem=document.createElement("div");

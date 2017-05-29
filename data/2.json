@@ -14,5 +14,13 @@
         "img": "img/news7.jpg",
         "alt": "tsm-back",
         "desc": "La casa de juegos que empezo con 5 amigos jugando a League of Legends hoy ha sido proclamada como el equipo de E-Sports con más ingresos a nivel mundial."
+    },
+    {
+        "type":"Informática: ",
+        "title": "Apple mejora su TV",
+        "date": " 10-06-2017",
+        "img": "img/news9.jpg",
+        "alt": "apple-tv",
+        "desc": "La empresa californiana invierte en mejorar su producto a base de optimización de codigo. Esto ha sido posible gracias a gente jóven y mejoras de codigo."
     }
 ]

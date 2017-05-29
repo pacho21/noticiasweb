@@ -14,5 +14,13 @@
         "img": "img/news5.jpg",
         "alt": "Nadal-Dios",
         "desc": "Nadal se proclama Dios de Mallorca conseguiendo todo perfecto izipizi"
+    },
+    {   
+        "type":"Salud: ",
+        "title": "Bezoya, el agua de Borja Moll",
+        "date": "08-09-2017",
+        "img": "img/news8.jpg",
+        "alt": "Bezoya",
+        "desc": "El agua oficial del instituto es Bezoya. Las mujeres de la cafeteria confirman que es un agua que contiene todo lo necesario para que los alumnos crezcan sanos."
     }
 ]

@@ -17,4 +17,4 @@ Presentación al cargar:
 
 Presentación de la noticia:
 
-[logo](http://i.imgur.com/nmypSqj.jpg)
+[Imagen](http://i.imgur.com/nmypSqj.jpg)
