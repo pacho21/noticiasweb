@@ -1,14 +1,16 @@
 [
-    {
-        "title": "Explota un camion en mallorca",
-        "date": "Mon May 08 2017",
+    {   
+        "type":"Sucesos: ",
+        "title": "Explota un camion en Mallorca",
+        "date": "08-05-2017",
         "img": "img/new4.jpg",
         "alt": "Camion-Explota",
         "desc": "Causa 300 muertos y la lia parda"
     },
     {
-        "title": "Nadal es Dios de Mallorca",
-        "date": "Wed Apr 05 2017",
+        "type":"Deportes: ",
+        "title": "Nadal vuelve a ganar en Montecarlo",
+        "date": " 05-04-2017",
         "img": "img/news5.jpg",
         "alt": "Nadal-Dios",
         "desc": "Nadal se proclama Dios de Mallorca conseguiendo todo perfecto izipizi"
