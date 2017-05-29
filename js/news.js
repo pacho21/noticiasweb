@@ -1,32 +1,39 @@
+//Array donde guardamos el nombre de los archivos JSON
 var ficherosJSON = ["1.json","2.json"];
+//variable para controlar las cargas.
 var cargado=0;
+//variables para controlar las minicargas.
 var miniCarga=0;
-var c=true;
+
+
 $(document).ready(function() {
 	
+	//metodo que añade items al carrosel para mostrar todas las noticias(las del json + las que ya habia).	
 	cargaMini();
 	
-
+	//esto hace que al cargar la pagina nos posicionemos arriba del todo.
 	$('html, body').animate({ scrollTop: 0 }, 100);
 	
+	//si hacemos click en el botón con id "mas" hara que carguemos más noticias.
 	$("#mas").click(function(){
 		cargarNoticias();
 	});
 	
-	// Each time the user scrolls
+	// Cuando el usuario hace scroll:
 	var win = $(window);
 	win.scroll(function() {
-		// End of the document reached?
+		// Si hemos alcanzado la pagina de abajo.
 		if ($(document).height() - win.height()  == win.scrollTop()) {					
 		cargarNoticias();
 		}
 	});
 });
 
+//metodo que si lo ejecutamos cargara más noticias si no hemos alcanzado el limite de noticias que tenemos en los ficherosJSON.
 function cargarNoticias(){
 	if((cargado<ficherosJSON.length)){
 		$.getJSON("https://rawgit.com/pacho21/noticiasweb/master/data/"+ficherosJSON[cargado], function(jsOb){
-			for(x=0;x<3;x++){				
+			for(x=0;x<jsOb.length;x++){				
 				var tit = document.createElement("h3");
 				var divI = document.createElement("div");
 				var img = document.createElement("img");
@@ -82,10 +89,11 @@ function cargarNoticias(){
 
 }
 
+//metodo que añade items al carrosel para mostrar todas las noticias(las del json + las que ya habia).
 function cargaMini(){
 	while(miniCarga<ficherosJSON.length){
 		$.getJSON("https://rawgit.com/pacho21/noticiasweb/master/data/"+ficherosJSON[miniCarga], function(jsObject){
-			for(x=0;x<3;x++){				
+			for(x=0;x<jsObject.length;x++){				
 				var type=document.createElement("h3");
 				var minidesc=document.createElement("p");
 				var divItem=document.createElement("div");

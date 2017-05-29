@@ -138,7 +138,8 @@
         padding-top: 70px;
     }
 
-#divPublicidad{
+#divPublicidadMov{display:none;}
+#divPublicidadWeb{
     width: 300px;
     position: absolute;
     right: 0px;
@@ -193,3 +194,8 @@ hr{
 #imgPublicidad{
   width: 100%;
 }
+.footer{padding:50px 0 50px;margin-top:100px;color:#99979c;text-align:left;
+    background-color:#2a2730}
+.footer-links{padding-left:0;margin-bottom:20px}
+.footer-links li+li{margin-left:15px}
+.footer-links li{display:inline-block}

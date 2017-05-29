@@ -1,10 +1,20 @@
 /*CSS PARA movil sin aire*/
-#divPublicidadMovil{
+.aire h3{
+
+}
+  #divHead{
+    background-image: url(../img/bhead.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+  }
+#divPublicidadMov{
   position: fixed;
   bottom: 0px;
   background-color: green;
   height: 90px;
-  width: 100%; /*Podria intentar que sea adaptive*/
+  width: 100%;
+  z-index: 99999 !important;
 
 }
 #divPublicidadWeb{
@@ -13,3 +23,33 @@
 #divAire{
   margin:0%;
 }
+.affix{
+        position: static;
+}
+
+#cargar{
+  background-color:rgba(144,195,212,1);
+  border: 1px solid black;
+  color:white;
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+#imgPublicidadMov{
+	height: 100%;
+	width: 100%;
+}
+
+#nImg{
+	margin:auto;
+	width: 315px;
+}
+
+#imgNoticia{
+	width: 100%;
+}
+.footer{padding:50px 0 50px;margin-top:100px;margin-bottom: 89px; color:#99979c;text-align:left;background-color:#2a2730}
+.footer-links{padding-left:0;margin-bottom:20px}
+.footer-links li+li{margin-left:15px}
+.footer-links li{display:inline-block}
