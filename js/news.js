@@ -5,6 +5,9 @@ var cargado=0;
 //variables para controlar las minicargas.
 var miniCarga=0;
 
+//añadido para que maximo muestre 8 veces el mensaje "no hay mas noticias" :)
+var noMore=0;
+
 
 $(document).ready(function() {
 	
@@ -16,7 +19,12 @@ $(document).ready(function() {
 	
 	//si hacemos click en el botón con id "mas" hara que carguemos más noticias.
 	$("#mas").click(function(){
+		if(cargado<ficherosJSON.length){
 		cargarNoticias();
+		 }else{
+		 	$('#noMas').fadeIn(2000);
+			$('#noMas').fadeOut(3000);
+		 }
 	});
 	
 	// Cuando el usuario hace scroll:
@@ -82,8 +90,10 @@ function cargarNoticias(){
 		});
 		cargado++;
 	}else{
+		if(noMore<8){
 		$('#noMas').fadeIn(3000);
 		$('#noMas').fadeOut(5000);
+	}
 
 	}
 
