@@ -1,7 +1,11 @@
 var ficherosJSON = ["1.json","2.json","3.json"];
 var cargado=0;
+var miniCarga=0;
 var c=true;
 $(document).ready(function() {
+	
+	cargaMini();
+	
 
 	$('html, body').animate({ scrollTop: 0 }, 100);
 	
@@ -13,8 +17,7 @@ $(document).ready(function() {
 	var win = $(window);
 	win.scroll(function() {
 		// End of the document reached?
-		if ($(document).height() - win.height() == win.scrollTop()) {	
-				
+		if ($(document).height() - win.height()  == win.scrollTop()) {					
 		cargarNoticias();
 		}
 	});
@@ -57,15 +60,16 @@ function cargarNoticias(){
 
 				//TENGO QUE METER LOS ELEMENTOS QUE he creado
 				$("#aire").append(tit);				
-				$(tit).fadeIn(2000);
+				$(tit).fadeIn(1500);
 				$("#aire").append(divI);
 				$(divI).append(img);
-				$(img).fadeIn(2000);
+				$(img).fadeIn(1500);
 				$("#aire").append(divN);
 				$(divN).append("<br/>");
 				$(divN).append(desc);
-				$(desc).fadeIn(2000);
+				$(desc).fadeIn(1500);
 				$(divN).append(but);
+				$(but).fadeIn(1500);
 				$("#aire").append("<hr>");
 			}
 		});
@@ -76,4 +80,24 @@ function cargarNoticias(){
 
 	}
 
+}
+
+function cargaMini(){
+	while(miniCarga<ficherosJSON.length){
+		$.getJSON("https://rawgit.com/pacho21/noticiasweb/master/data/"+ficherosJSON[miniCarga], function(jsObject){
+			for(x=0;x<2;x++){				
+				var type=document.createElement("h3");
+				var minidesc=document.createElement("p");
+				var divItem=document.createElement("div");
+				type.textContent=jsObject[x].type;
+				minidesc.textContent=jsObject[x].title;
+				divItem.className="item";
+
+				$("#itemsCarro").append(divItem);
+				$(divItem).append(type);
+				$(divItem).append(minidesc);
+				}
+		});
+		miniCarga++;
+	}
 }
