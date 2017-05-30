@@ -22,7 +22,7 @@ $(document).ready(function() {
 		if(cargado<ficherosJSON.length){
 		cargarNoticias();
 		 }else{
-		 	$('#noMas').fadeIn(2000);
+		 	$('#noMas').fadeIn(1500);
 			$('#noMas').fadeOut(3000);
 		 }
 	});
@@ -98,9 +98,9 @@ function cargarNoticias(){
 		});
 		cargado++;
 	}else{
-		if(noMore<8){
-		$('#noMas').fadeIn(3000);
-		$('#noMas').fadeOut(5000);
+		if(noMore<5){
+		$('#noMas').fadeIn(1500);
+		$('#noMas').fadeOut(3000);
 	}
 
 	}
