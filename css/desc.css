@@ -3,6 +3,7 @@
     height: 100%;
   }
 
+#divHead h1{font-family: 'Montserrat Subrayada', sans-serif;}
   #divHead{
     margin-left: 2%!important;
     margin-right:2%!important;
@@ -94,7 +95,7 @@
   .item {
       display: none;
       position: relative;
-      .transition(6s ease-in-out left);
+      .transition(4s ease-in-out left);
   }
 
   .affix {
@@ -104,8 +105,8 @@
         
         background-color:rgba(144,195,212,1)!important;
         z-index: 9999!important;
-       animation: affixFadeIn 3s  ease-in;
-        -webkit-animation: affixFadeIn 3s;
+       animation: affixFadeIn 2s  ease-in;
+        -webkit-animation: affixFadeIn 2s;
         height: 50px;
   }
   .affix .item h3{
