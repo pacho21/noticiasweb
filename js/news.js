@@ -71,6 +71,8 @@ function cargarNoticias(){
 				$(desc).hide();
 
 				date.textContent=jsOb[x].date;
+				date.id="date";
+				date.className="small";
 				$(date).hide();
 
 				divI.id="nImg";				
