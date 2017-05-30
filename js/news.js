@@ -33,6 +33,7 @@ $(document).ready(function() {
 		// Si hemos alcanzado la pagina de abajo.
 		if ($(document).height() - win.height()  == win.scrollTop()) {					
 		cargarNoticias();
+
 		}
 	});
 });
@@ -101,6 +102,7 @@ function cargarNoticias(){
 		if(noMore<5){
 		$('#noMas').fadeIn(1500);
 		$('#noMas').fadeOut(3000);
+		noMore++;
 	}
 
 	}
