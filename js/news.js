@@ -20,11 +20,11 @@ $(document).ready(function() {
 	//si hacemos click en el botón con id "mas" hara que carguemos más noticias.
 	$("#mas").click(function(){
 		if(cargado<ficherosJSON.length){
-		cargarNoticias();
-		 }else{
-		 	$('#noMas').fadeIn(1500);
+			cargarNoticias();
+		}else{
+			$('#noMas').fadeIn(1500);
 			$('#noMas').fadeOut(3000);
-		 }
+		}
 	});
 	
 	// Cuando el usuario hace scroll:
@@ -32,7 +32,7 @@ $(document).ready(function() {
 	win.scroll(function() {
 		// Si hemos alcanzado la pagina de abajo.
 		if ($(document).height() - win.height()  == win.scrollTop()) {					
-		cargarNoticias();
+			cargarNoticias();
 
 		}
 	});
@@ -100,10 +100,10 @@ function cargarNoticias(){
 		cargado++;
 	}else{
 		if(noMore<5){
-		$('#noMas').fadeIn(1500);
-		$('#noMas').fadeOut(3000);
-		noMore++;
-	}
+			$('#noMas').fadeIn(1500);
+			$('#noMas').fadeOut(3000);
+			noMore++;
+		}
 
 	}
 
@@ -124,7 +124,7 @@ function cargaMini(){
 				$("#itemsCarro").append(divItem);
 				$(divItem).append(type);
 				$(divItem).append(minidesc);
-				}
+			}
 		});
 		miniCarga++;
 	}
