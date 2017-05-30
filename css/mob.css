@@ -1,7 +1,8 @@
 /*CSS PARA movil sin aire*/
 .aire h3{
-
 }
+hr{width: 80%;}
+#divHead h1{font-family: 'Montserrat Subrayada', sans-serif;}
   #divHead{
     background-image: url(../img/bhead.jpg);
     background-size: cover;
@@ -26,7 +27,7 @@
 .affix{
         position: static;
 }
-
+#noMas{display: none;}
 #cargar{
   background-color:rgba(144,195,212,1);
   border: 1px solid black;
@@ -40,12 +41,10 @@
 	height: 100%;
 	width: 100%;
 }
-
 #nImg{
 	margin:auto;
 	width: 315px;
 }
-
 #imgNoticia{
 	width: 100%;
 }

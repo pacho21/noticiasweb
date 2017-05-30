@@ -174,7 +174,6 @@
 hr{
   width: 90%;
 }
-
 #noMas{
   display: none;  
   position: absolute;
@@ -182,7 +181,6 @@ hr{
   margin-bottom: 5%;
   z-index: 999 !important;
 }
-
 #cargar{
   background-color:rgba(144,195,212,1);
   border: 1px solid black;
