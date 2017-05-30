@@ -21,9 +21,12 @@ Presentación de la noticia:
 
 [Imagen](http://i.imgur.com/nmypSqj.jpg)
 
+# Versiones del Proyecto:
+
 ### V5
 * Implementación de OpenGraph.
 * Implementación de RSS.
+
 
 ### V4
 * Reducción de imagenes con tinypng.

@@ -2,7 +2,7 @@
     {   
         "type":"Sucesos: ",
         "title": "Explota un camion en Mallorca",
-        "date": "08-05-2017",
+        "date": "08/05/2017",
         "img": "img/new4.jpg",
         "alt": "Camion-Explota",
         "desc": "Un camion que transportaba gasoil ha explotado mientras se dirigia hacia Llucmajor donde estaba previsto que descargase toda la gasolina que llevaba."
@@ -10,7 +10,7 @@
     {
         "type":"Deportes: ",
         "title": "Nadal vuelve a ganar en Monte Carlo",
-        "date": " 05-04-2017",
+        "date": " 05/04/2017",
         "img": "img/news5.jpg",
         "alt": "Nadal-Dios",
         "desc": "Rafael Nadal ha vuelto a conseguir un nuevo récord, ha vuelto a ganar en Monte Carlo y asi consigue proclamarse el Rey. Ha sido un partido difícil pero el mallorquin ha conseguido batir a su rival."
@@ -18,7 +18,7 @@
     {   
         "type":"Salud: ",
         "title": "Bezoya, el agua de Borja Moll",
-        "date": "08-09-2017",
+        "date": "08/09/2017",
         "img": "img/news8.jpg",
         "alt": "Bezoya",
         "desc": "El agua oficial del instituto es Bezoya. Las mujeres de la cafeteria confirman que es un agua que contiene todo lo necesario para que los alumnos crezcan sanos."

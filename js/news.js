@@ -48,6 +48,7 @@ function cargarNoticias(){
 				var divN = document.createElement("div");
 				var desc = document.createElement("p");
 				var but = document.createElement("button");
+				var date = document.createElement("footer");
 				
 
 				tit.textContent=jsOb[x].title;				
@@ -69,6 +70,9 @@ function cargarNoticias(){
 				desc.textContent=jsOb[x].desc;
 				$(desc).hide();
 
+				date.textContent=jsOb[x].date;
+				$(date).hide();
+
 				divI.id="nImg";				
 				divN.className = "container";
 				divN.id="news";
@@ -82,7 +86,9 @@ function cargarNoticias(){
 				$("#aire").append(divN);
 				$(divN).append("<br/>");
 				$(divN).append(desc);
+				$(desc).append(date);
 				$(desc).fadeIn(1500);
+				$(date).fadeIn(1500);
 				$(divN).append(but);
 				$(but).fadeIn(1500);
 				$("#aire").append("<hr>");
