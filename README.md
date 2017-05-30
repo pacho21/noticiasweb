@@ -1,4 +1,4 @@
-# noticiasweb
+# Noticiasweb
 Pagina web de noticias con noticias autorecargables mediante JQUERY, BOOTSTRAP, JSON.
 
 
@@ -21,6 +21,9 @@ Presentación de la noticia:
 
 [Imagen](http://i.imgur.com/nmypSqj.jpg)
 
+### V5
+* Implementación de OpenGraph.
+* Implementación de RSS.
 
 ### V4
 * Reducción de imagenes con tinypng.

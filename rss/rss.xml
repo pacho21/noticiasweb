@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+    <title>NoticiasNET</title>
+    <link>https://rawgit.com/pacho21/noticiasweb/master/index.html</link>
+    <description>Noticias que es gestionada por personas que no sabían muy bien de que iba esto del periodismo!</description>
+
+    <item>
+    	<title>Nuevo Termo Contigo</title>
+    	<link>https://rawgit.com/pacho21/noticiasweb/master/new1.html</link>
+    	<description>El nuevo termo ya esta disponible para su compra este viernes.</description>
+    </item>
+
+    <item>
+    	<title>Ronaldo gana La Liga Santander</title>
+    	<link>https://rawgit.com/pacho21/noticiasweb/master/new2.html</link>
+    	<description>CR7 Consigue su segunda liga como jugador del Real Madrid</description>
+    </item>
+</channel>
+</rss>
